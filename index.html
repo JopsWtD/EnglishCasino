@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ruleta de Clase</title>
+  <meta name="description" content="Sorteo de estudiantes con ruleta o poker y cinco juegos de casino para la clase de inglés.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <h1 class="brand-sign">Ruleta de Clase</h1>
+  <nav class="steps" id="steps" aria-label="Secciones">
+    <button type="button" data-go="roster"><span class="n">1</span>Estudiantes<svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></button>
+    <button type="button" data-go="select"><span class="n">2</span>Sorteo<svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></button>
+    <button type="button" data-go="games"><span class="n">3</span>Juegos</button>
+  </nav>
+  <div class="tools">
+    <button class="icon-btn" id="soundBtn" type="button"></button>
+    <button class="icon-btn" id="themeBtn" type="button"></button>
+  </div>
+</header>
+<main class="marquee" id="marquee">
+  <div class="bulb-layer" id="bulbLayer" aria-hidden="true"></div>
+  <section class="stage" id="stage"></section>
+</main>
+<div class="overlay" id="overlay" hidden></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="sr" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
